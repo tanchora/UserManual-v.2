@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>Website development using Nasdanika Vinci</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/themes/default/style.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/jstree.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css"/>
+    <script src="https://underscorejs.org/underscore-min.js"></script>
+    <script src="https://backbonejs.org/backbone-min.js"></script>
+    <script>/*
+ * Content router script. Processes 'router/<target id>/<conent path>' route by loading content from the path to the element with target id.
+ * For example: 
+ * - https://myapp/mypage.html#router/content/some/info will load https://myapp/some/info into an HTML element with id 'content'.
+ * - https://myapp/mypage.html#router/footer//other/stuff will load https://other/stuff into an HTML element with id 'footer'.
+ * 
+ * The router dims the target element and displays "Loading..." progress bar. 
+ * If load fails it displays an error message.
+ * 
+ */ 
+$(document).ready(
+			function() {
+
+				var Workspace = Backbone.Router.extend({
+
+					routes : {
+							"router/:targetId/*path" : function(targetId, path) {
+								var target = $("#"+targetId);
+								if (target.length) {
+									var loadingImage = "<table style='width: 100%; height:"+target.height()+"px; background:#EEE'>"
+										+ "<tr valign='middle'>" + "<td align='center'>"
+										+ '<div class="progress progress-striped active" style="width: 120px">'
+										+ '<div class="progress-bar"  role="progressbar" style="width: 100%">'
+										+ 'Loading...'
+										+ '</div>'
+										+ '</div>'
+										+ "</td>" + "</tr>" + "</table>";
+	
+								target.html(loadingImage);
+								                
+								target.load(path, null, function(responseText, textStatus, req) {									
+									if (textStatus == "error") {
+										if (responseText) {
+											var errorMessage = '<div class="card text-white bg-danger">'
+												+ '  <div class="card-header">Error loading "'+path+'"</div>'
+												+ '  <div class="card-body">'
+												+ '    <p class="card-text">'+responseText+'</p>'
+												+ '  </div>'
+												+ '</div>';
+											target.html(errorMessage);
+										} else {
+											target.html("<div class=\"alert alert-danger\">Error loading <b>"+path+"</b></div>");
+										}
+									}
+								});
+							} else {
+								alert("Element not found: " + targetId);
+							}
+						}
+					}
+
+				});
+
+				workspace = new Workspace();
+				Backbone.history.start();
+				
+				// Example of initial routing with the initial route taken from 'inital-route' token.
+				//if (!document.location.hash) {
+				//	workspace.navigate('router/{{initial-route}}', {
+				//		trigger : true
+				//	});
+				//}
+				
+			}
+); 
+</script>
+  </head>
+  <body>
+    <div class="container-fluid m-2 float-md-none">
+      <div class="row">
+        <div class="col bg-dark p-2">
+          <a data-nsd-action="index" href="index.html" class="nsd-action p-2 text-light text-left font-weight-bold display-4">
+            <span title="Точка входа в проект">Website development using Nasdanika Vinci</span>
+          </a>
+          <div class="nav float-right">
+            <a href="89065e3c-83a7-4f11-8116-faeff07cf0d3.html" class="nav-item nav-link active text-light text-capitalize font-weight-bold">Nasdanika</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a data-nsd-action="246dc448-143c-4b8e-a2e1-f66bde487938" href="246dc448-143c-4b8e-a2e1-f66bde487938.html" class="nsd-action bg-light m-1 pl-1 pr-1 navbar-brand">
+              <span title="Creating and managing a site">
+                <span style="margin-right:0.3em" class="fas fa-dharmachakra"></span>Создание и управление сайтом</span>
+            </a>
+            <button type="button" data-toggle="collapse" data-target="#nsd-vj" class="navbar-toggler">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nsd-vj" class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item m-1">
+                  <a href="07a68e63-1768-4632-802a-0766f61f22f2.html" disabled="false" class="nav-link">
+                    <span title="Website Modeling">
+                      <span style="margin-right:0.3em" class="fas fa-sitemap"></span>Проектирование и моделирование</span>
+                  </a>
+                </li>
+                <li class="nav-item ml-1 mr-1 mb">
+                  <a href="ac4497c3-dd0c-4e06-ab60-a12f6cac6ae9.html" disabled="false" class="nav-link">
+                    <span title="Content management">
+                      <span style="margin-right:0.3em" class="fas fa-pencil-ruler"></span>Управление контентом</span>
+                  </a>
+                </li>
+                <li class="nav-item m-1">
+                  <a href="b30011a8-c6d3-48ee-a834-14bc9fbe499a.html" disabled="false" class="nav-link">
+                    <span title="Теоретические основы управления внешним видом сайта">
+                      <span style="margin-right:0.3em" class="fas fa-paint-brush"></span>Управление дизайном</span>
+                  </a>
+                </li>
+                <li class="nav-item m-1 font-weight-bold">
+                  <a href="c675b69a-48c9-49ae-bd83-08ae43270d17.html" disabled="false" class="nav-link">
+                    <span title="Основополагающие принципы Nasdanika Vinci">
+                      <span style="margin-right:0.3em" class="fas fa-graduation-cap"></span>Философия Nasdanika Vinci</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="486b57cf-1345-4571-ac64-1aa169560e7c.html" disabled="false" class="nav-link">
+                    <span title="Terms and Definitions">Термины и определения</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div style="min-height:30rem" class="row">
+        <div class="col-2 border-right border-light mr-2">
+          <div class="list-group list-group-flush">
+            <a href="50ece6e1-e314-4167-8167-864ca3b200b9.html" class="list-group-item list-group-action mb pb-2 pt-2">
+              <span title="Preparation for work">
+                <span style="margin-right:0.3em" class="fas fa-tools"></span>Подготовка к работе</span>
+            </a>
+            <a href="9f2b9dfe-16d7-4de6-bbc7-594518fb9adc.html" class="list-group-item list-group-action mb-0 mt-0 pb-2 pt-2">
+              <span title="Create a model">
+                <span style="margin-right:0.3em" class="fas fa-sitemap"></span>Создаем модель</span>
+            </a>
+            <a href="e56cc7fa-6785-4e44-b465-de111adf1d41.html" class="list-group-item list-group-action mb mt pb-2 pt-2">
+              <span title="Customize the roles of model elements">
+                <span style="margin-right:0.3em" class="fas fa-theater-masks"></span>Настраиваем роли элементов модели</span>
+            </a>
+            <a href="73d19536-8fdf-412e-8e7d-b59600b94b6f.html" class="list-group-item list-group-action mb mt pb-2 pt-2">
+              <span style="margin-right:0.3em" class="fas fa-paint-brush"></span>Настраиваем внешний вид</a>
+            <a href="c2c8940c-b452-41b6-b6e7-0805ffd7e6db.html" class="list-group-item list-group-action mb mt pb-2 pt-2">
+              <span style="margin-right:0.3em" class="fas fa-pencil-ruler"></span>Наполняем сайт</a>
+            <a href="c8501dee-226e-4494-a0bb-a015a66303b2.html" class="list-group-item list-group-action mb mt pb-2 pt-2">
+              <span style="margin-right:0.3em" class="fas fa-share-square"></span>Публикация</a>
+          </div>
+        </div>
+        <div id="content" class="col p-2">&nbsp;<h1><a href="#link-to-the-nasdaniki-website-describing-how-beautiful-we-are" id="link-to-the-nasdaniki-website-describing-how-beautiful-we-are">Link to the Nasdaniki website describing how beautiful we are</a></h1>
+<p>Ссылка на сайт Насданики с описанием того какие мы прекрасные</p>
+</div>
+      </div>
+      <div class="row">
+        <div class="col bg-dark text-center font-weight-bold">
+          <a data-nsd-action="8cd58281-930d-4e00-8d30-204a4c83b361" href="8cd58281-930d-4e00-8d30-204a4c83b361.html" class="nsd-action bg-dark text-light text-center">Examples of finished work</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
