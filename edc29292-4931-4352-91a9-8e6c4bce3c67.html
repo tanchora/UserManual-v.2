@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <title>Website development using Nasdanika Vinci</title>
+    <title>Nasdanika Vinci</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/themes/default/style.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/jstree.min.js"></script>
@@ -16,7 +16,7 @@
   <body>
     <div class="container-fluid mt-2">
       <div class="row">
-        <div class="col bg-dark p-2">
+        <div style="text-decoration:none" class="col bg-dark p-2">
           <a data-nsd-action="index" href="index.html" class="nsd-action p-2 text-light text-left font-weight-bold display-4">
             <span title="Точка входа в проект">Website development using Nasdanika Vinci</span>
           </a>
@@ -26,16 +26,16 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col bg-light px-0">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a data-nsd-action="246dc448-143c-4b8e-a2e1-f66bde487938" href="246dc448-143c-4b8e-a2e1-f66bde487938.html" class="nsd-action bg-light mb-1 mt-1 ml-1 mr-3 navbar-brand">
               <span title="Creating and managing site">
                 <span style="margin-right:0.3em" class="fas fa-dharmachakra"></span>Vinci development</span>
             </a>
-            <button type="button" data-toggle="collapse" data-target="#nsd-1cb" class="navbar-toggler">
+            <button type="button" data-toggle="collapse" data-target="#nsd-6e" class="navbar-toggler">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd-1cb" class="collapse navbar-collapse">
+            <div id="nsd-6e" class="collapse navbar-collapse">
               <ul class="navbar-nav">
                 <li class="nav-item m-1">
                   <a href="07a68e63-1768-4632-802a-0766f61f22f2.html" disabled="false" class="nav-link">
@@ -144,7 +144,7 @@
             </div>
           </div>
         </div>
-        <div class="col p-2">
+        <div style="overflow-x:scroll" class="col p-2">
           <div class="nav float-right">
             <a href="99d7f6d3-34fb-41bb-9877-c14368d25674.html" class="nav-item nav-link">Элементы диаграммы и элементы модели</a>
             <a href="63f5c010-f764-473e-8832-321523607b26.html" class="nav-item nav-link">Элементы диаграммы и элементы макета сайта</a>
@@ -156,6 +156,63 @@
             <a href="#nsd-action-content-c08a49f0-3578-4e65-8616-72a57a75d7f9" data-toggle="tab" role="tab" class="nav-item nav-link active">1. Создание и настройка корневой Action</a>
             <a href="#nsd-action-content-5d7680c3-f2fd-4dfb-89cb-b5d0b7d14535" data-toggle="tab" role="tab" class="nav-item nav-link">2. Создание простой диаграммы</a>
             <a href="#nsd-action-content-568f7dc8-8471-45d1-ac43-0bc498e61278" data-toggle="tab" role="tab" class="nav-item nav-link">3. Создание иерархических диаграмм</a>
+          </div>
+          <div class="tab-content">
+            <div id="nsd-action-content-c08a49f0-3578-4e65-8616-72a57a75d7f9" role="tabpanel" class="tab-pane fade show active">
+              <div class="markdown-body"><p>Чтобы начать строить нашу модель необходимо создать центральный элемент модели - корневую Action (Root Action). Корневая Action объединяес все остальные элементы нашей модели и на странице выглядит как самый верхний заголовок.</p>
+<p>Выделяем элемент Bootstrap Container Application -&gt; щелкаем правой кнопкой мыши (ПКМ) -&gt; New child -&gt; Action <img src="img/02.ModelCreation/02.02.01_Create_Root_Action.jpg" alt="Создаем Root Action" title="Создаём корневую Action модели" /></p>
+<p>Мы видим, что наша Action появляется в дереве элементов под скучным названием <strong>Action</strong>. Давайте представим, что мы хотим сделать сайт, на котором будет размещено резюме Иванова Ивана Ивановича. Так и назовем нашу корневую Action.</p>
+<p><strong>!!!</strong> Обратите внимание, что в поле <strong>Title</strong> вводится название, которое будет отражаться в дереве элементов и в диаграмме. А в поле <strong>Text</strong> вводится название, которое будет отражаться на сайте. Если поле <strong>Text</strong>  не заполнено, то страница не сгенерируется.</p>
+<p>Так как созданная нами Action является точкой входа на сайт, то необходимо в поле ID заменить набор непонятных символов на слово <strong>index</strong>.<br />
+Более подробно про настройки Action можно прочитать <a href="&quot;&quot;">тут</a>.</p>
+<p><img src="img/02.ModelCreation/02.02.02_New_Root_Action.jpg" alt="Настройки корневой Action" title="Настройки корневой Action" /></p>
+<p>Переходим к <a href="5d7680c3-f2fd-4dfb-89cb-b5d0b7d14535.html">созданию диаграммы</a></p>
+</div>
+            </div>
+            <div id="nsd-action-content-5d7680c3-f2fd-4dfb-89cb-b5d0b7d14535" role="tabpanel" class="tab-pane fade">
+              <div class="markdown-body"><hr />
+<p>В области Model Explorer находим элемент <strong>representations.aird</strong>.  Открываем его двойным щелчком.  Видим мастер создания новых диаграмм (репрезентаций).</p>
+<p><img src="img/02.ModelCreation/02.02.03_Open_representation_aird.jpg" alt="Мастер создания новых диаграмм" title="Мастер создания новых диаграмм" /></p>
+<p><img src="img/02.ModelCreation/02.02.04_New_Action_diagram_creation.jpg" alt="Создание новой диаграммы Action" title="Создание новой диаграммы Action" /></p>
+<p>На данный момент у нас есть единственный элемент для которого можно создать диаграмму - это корневая Action Иванов Иван Иванович. Выбираем. Нажимаем кнопку Finish.</p>
+<p><img src="img/02.ModelCreation/02.02.05_Coose_root_element.jpg" alt="Выбираем корневую Action. Нажимаем кнопку Finish." title="Выбираем корневую Action. Нажимаем кнопку Finish." /> <img src="img/02.ModelCreation/02.02.06_Name.jpg" alt="Придумываем имя." title="Вводим название нашей диаграммы" /></p>
+<p>Придумываем имя. После нажатия на кнопочку <strong>ОК</strong> в области редактирования откроется наша диаграмма.</p>
+<p><img src="img/02.ModelCreation/02.02.07_New_Diagram.jpg" alt="Открывается редактор диаграммы" title="Окно редактирования диаграммы: в правой части окна - палитра элементов, которые мы можем создать. В нижней части окна - область редактирования свойств выбранного элемента " /></p>
+<p>Наш учебный пример -  это сайт жизнеописания Иванова Ивана Ивановича.</p>
+<p><strong>Жизнеописание (Curriculum Vitae)</strong> - это расширенный вариант резюме, предоставляемый работодателю при поиске работы. Следовательно, наш сайт будет содержать те разделы, которые обычно содержит резюме. Каждый раздел - это отдельаная Actions, которую мы можем нарисовать на диаграмме.</p>
+<p>Всё, что мы хотим сообщить о Иванове Иване Ивановиче объединяется понятием <strong>&ldquo;Резюме&rdquo;</strong> - это будет наша ключевая Action.</p>
+<p><img src="img/02.ModelCreation/02.02.08_Create_Principal_Action.jpg" alt="Создаём ключевую Action" title="Создаем ключевую Action и устанавливаем связь между родительской и дочерней Action" /></p>
+<p>Как правило, резюме содержит следующие разделы:</p>
+<ol>
+<li>Персональная информация (данные о человеке + контактная информация)</li>
+<li>Цель. В этом разделе описывается: на какие позиции претендует кандидат, какую работу он ищет.</li>
+<li>Образование</li>
+<li>Опыт работы</li>
+<li>Профессиональные навыки</li>
+</ol>
+<p>Создадим все эти Actions и построим диаграмму, в которой у корневой Action есть только один ребенок: ключевая Action &ldquo;Резюме&rdquo;, а все остальные разделы являются детьми ключевой Action.</p>
+<p>Мы можем выделять элементы диаграммы и редактировать их свойства.</p>
+<p>На данном этапе нам необходимо для каждой Actions заполнить поля <strong>Text</strong> и <strong>Title</strong>. Пока что больше ничего настраивать не будем.</p>
+<p>Переходим в дерево элементов нашего проекта. Мы видим, что в папке <strong>Elements</strong>, которая принадлежит корневой Action, появились дочерние элементы.</p>
+<p><img src="img/02.ModelCreation/02.02.10_Tree_and_Diagram.jpg" alt="Простая диаграмма проекта" title="Так выглядит самая простая диаграмма и дерево элементов проекта." /></p>
+<p>Теперь мы можем сгенерировать первый вариант нашего сайта и посмотреть на результат.</p>
+<p>Выделяем элемент <strong>Page</strong>, нажимаем правую кнопку мыши и в контекстном меню выбираем <strong>Generate</strong> -&gt; <strong>Application</strong></p>
+<p><img src="img/02.ModelCreation/02.02.11_GenerateApplication.jpg" alt="Генерируем наш сайт" title="Генерируем наш первый сайт" /></p>
+<p>После этого, в области навигации проекта (Model Explorer) появится новая папка, в которой будут содержаться сгенерированные HTML страницы. Она называется так же как и файл с расширением *.vinci, который мы создавали в самом начале работы.</p>
+<p>Открываем эту папку и находим в ней файл index.html. (Или любой другой из сгенерированных файлов  - на начальную страницу можно будет перейти, потому что все ссылки будут рабочими)</p>
+<p><strong>Правая кнопка мыши -&gt; Open With -&gt; Web Browser</strong></p>
+<p><img src="img/02.ModelCreation/02.02.12_OpenWithWB.jpg" alt="Открываем сгененированный сайт" title="Открываем  сгенерированный сайт во встроенном браузере Eclipse" /></p>
+<p>И вот, мы видим первый результат нашей работы. Для наглядности на главную страницу был добавлен текст и в самом начале работы была выбрана тема Bootstrap для нашего сайта (в настройках элемента Page). Но никаких других настроек внешнего вида не было сделано, поэтому наш сайт выглядит более чем скромно, но он уже полностью функционален.</p>
+<p>Для того чтобы иметь более адекватное представление о сайте лучше открыть его в используемом вами браузере, а не в <strong>Eclipse</strong>.</p>
+<p>Для этого скопируйте ссылку из адресной строки браузера <strong>Eclipse</strong> и вставьте ее в адресную строку вашего браузера.</p>
+<p><img src="img/02.ModelCreation/02.02.25_FerstResult.jpg" alt="Первый результат нашей работы" title="Первый результат: сайт сгенерированный из диаграммы элементов без каких либо настроек внешнего вида" /></p>
+<p>После минимальных настроек внешнего вида и ролей созданных нами Actions внешний вид нашего сайта изменится.</p>
+<p>По ссылке можно <a href="CV.v.1/CurriculumVitae/index.html">посмотреть на внесенные изменения</a>.</p>
+<p>То, в каком месте будут располагаться наши Action на странице зависит от того, какая роль им назначена. Описание порядка настройки ролей подробно описано в разделе <a href="b518f9f5-5cc0-4296-9b92-c1e066eaf0c0.html">&ldquo;Настраиваем роли элементов модели&rdquo;</a></p>
+<p>За внешний вид отвечает специальный &ldquo;ребёнок&rdquo; элемента модели - <strong>Appearence</strong>. Если <strong>Appearance</strong> не создан и не настроен, то отображение элемента модели будет определяться выбранной темой Bootstrap и ролью, которая назначена Action.</p>
+<p><a href="c25d37ce-18b1-403a-a8b4-0fc59f0c41fa.html">Порядок создания и настройки Appearanse</a> описывается в соответствующем разделе.</p>
+</div>
+            </div>
           </div>
         </div>
       </div>

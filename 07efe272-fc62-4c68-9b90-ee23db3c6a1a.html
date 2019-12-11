@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <title>Website development using Nasdanika Vinci</title>
+    <title>Nasdanika Vinci</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/themes/default/style.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/jstree.min.js"></script>
@@ -16,7 +16,7 @@
   <body>
     <div class="container-fluid mt-2">
       <div class="row">
-        <div class="col bg-dark p-2">
+        <div style="text-decoration:none" class="col bg-dark p-2">
           <a data-nsd-action="index" href="index.html" class="nsd-action p-2 text-light text-left font-weight-bold display-4">
             <span title="Точка входа в проект">Website development using Nasdanika Vinci</span>
           </a>
@@ -26,16 +26,16 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col bg-light px-0">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a data-nsd-action="246dc448-143c-4b8e-a2e1-f66bde487938" href="246dc448-143c-4b8e-a2e1-f66bde487938.html" class="nsd-action bg-light mb-1 mt-1 ml-1 mr-3 navbar-brand">
               <span title="Creating and managing site">
                 <span style="margin-right:0.3em" class="fas fa-dharmachakra"></span>Vinci development</span>
             </a>
-            <button type="button" data-toggle="collapse" data-target="#nsd-1cp" class="navbar-toggler">
+            <button type="button" data-toggle="collapse" data-target="#nsd-6r" class="navbar-toggler">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd-1cp" class="collapse navbar-collapse">
+            <div id="nsd-6r" class="collapse navbar-collapse">
               <ul class="navbar-nav">
                 <li class="nav-item m-1">
                   <a href="07a68e63-1768-4632-802a-0766f61f22f2.html" disabled="false" class="nav-link">
@@ -144,34 +144,37 @@
             </div>
           </div>
         </div>
-        <div class="col p-2">
+        <div style="overflow-x:scroll" class="col p-2">
           <h2 data-nsd-action="07efe272-fc62-4c68-9b90-ee23db3c6a1a" class="nsd-action">3. Создание проекта</h2><hr />
-<p>Первым шагом работы над моделью является создание простого проекта в Eclipse, конвертация его в Modeling Project, создание новой Vinci модели и настройка Viewpoint (&ldquo;Точки зрения&rdquo;) для нашего проекта, что даст возможность в дальнейшем работать с диаграммой связей Action. Кроме того, необходимо открыть модель в специальном редакторе, чтобы было удобнее работать.</p>
+<p>Первым шагом работы над моделью является создание простого проекта в Eclipse.</p>
+<p>Затем, необходимо конвертировать простой проект в специальный вид проектов: &ldquo;Modeling Project&rdquo;.</p>
+<p>После конвертации создадим модель разрабатываемого сайта. Файл модели имеет расширение *.vinci. В Nasdanika Tool Suit есть специальный мастер для создания таких моделей.</p>
+<p>Далее, для проекта необходимо настроить Viewpoint (&ldquo;Точку зрения&rdquo;), что даст возможность в дальнейшем работать с диаграммой связей Action.</p>
+<p>Кроме того, необходимо открыть модель в специальном редакторе, чтобы было удобнее работать.</p>
+<p>Рассмотрим этот процесс подробнее.</p>
 <hr />
 <h4><a href="#1-в-области-model-explorer-щелкнуть-правой-кнопкой-мыши-и-создать-новый-проект" id="1-в-области-model-explorer-щелкнуть-правой-кнопкой-мыши-и-создать-новый-проект">1. В области Model Explorer щелкнуть правой кнопкой мыши и создать новый проект.</a></h4>
 <p>1.1 ПКМ -&gt; New -&gt; Project</p>
-<p><img src="img\01.RightClick.jpg" alt="Model creation 1" title="Создание нового объекта в области эксплорера моделей" /></p>
 <p>1.3 Папка General -&gt; раскрываем папку -&gt; выбираем Project -&gt; нажимаем Next</p>
-<p><img src="img\02.ChooseProjectType.jpg" alt="Ищем простой проект в папке General" title="Ищем простой проект в папке General" /></p>
+<p><img src="img\01.PrepForWork\01.RightClick.jpg" alt="Model creation 1" title="Создание нового объекта в области эксплорера моделей" /> -&gt; <img src="img\01.PrepForWork\02.ChooseProjectType.jpg" alt="Ищем простой проект в папке General" title="Ищем простой проект в папке General" /></p>
 <p>1.3 Присваиваем проекту имя (латиницей, без пробелов и специальных символов)</p>
 <p>1.4 В поле Location выбираем место, в котором будет располагаться проект. Предварительно убираем галочку Use default location.  Если предполагается публиковать проект на GitHab - располагаем его в репозиторий.</p>
-<p><img src="img\03_NameAndLocation.jpg" alt="присваиваем проекту имя и выбираем место сохранения" title="Имя и место в файловой системе" /></p>
+<p><img src="img\01.PrepForWork\03_NameAndLocation.jpg" alt="присваиваем проекту имя и выбираем место сохранения" title="Имя и место в файловой системе" /></p>
 <p>1.5 Выбираем связанные проекты</p>
 <h4><a href="#2-конвертируем-простой-проект-в-modeling-project" id="2-конвертируем-простой-проект-в-modeling-project">2. Конвертируем простой проект в Modeling Project</a></h4>
 <p>2.1 На корневой папке проекта <strong>ПКМ</strong> -&gt; Configure -&gt; Convert to Modeling Project</p>
 <p>в результате в проекте появляются новая папочка и файл representations.aird - очень важный и нужный.</p>
-<p><img src="img/05_ConvertToModelingProject.jpg" alt="Конвертируем проект" /></p>
+<p><img src="img\01.PrepForWork\05_ConvertToModelingProject.jpg" alt="Конвертируем проект" /></p>
 <h4><a href="#3-создаем-новую-vinci-модель" id="3-создаем-новую-vinci-модель">3. Создаем новую Vinci модель.</a></h4>
 <p>3.1 Выделяем корневой каталог (папку) проекта -&gt; <strong>ПКМ</strong> -&gt; New -&gt; Other</p>
 <p>3.2 Прокручиваем вниз, находим папку <strong>Nasdanika</strong> -&gt; раскрываем папку -&gt; выделяем Vinci Model -&gt; Next</p>
-<p><img src="img\07_CreateVinciModel.jpg" alt="Ищем мастер создания моделей Vinci" title="Ищем мастер создания моделей Vinci" /></p>
 <p>3.3 Присваиваем модели имя -&gt; Next</p>
-<p><img src="img\08_NameofVincimodel.jpg" alt="Присваиваем имя" title="Присваиваем имя" /></p>
+<p><img src="img\01.PrepForWork\07_CreateVinciModel.jpg" alt="Ищем мастер создания моделей Vinci" title="Ищем мастер создания моделей Vinci" /> <img src="img\01.PrepForWork\08_NameofVincimodel.jpg" alt="Присваиваем имя" title="Присваиваем имя" /></p>
 <p>3.4 Выбираем объект (Model Object) для которого будем строить модель.</p>
 <ul>
 <li><strong>Обязательно</strong> проверяем, что в поле XML Encoding установлена кодировка UTF-8</li>
 </ul>
-<p><img src="img\09_SelectRootModelObject.jpg" alt="Выбираем моделируемый объект" title="Выбираем для какого объекта будем строить модель" /></p>
+<p><img src="img\01.PrepForWork\09_SelectRootModelObject.jpg" alt="Выбираем моделируемый объект" title="Выбираем для какого объекта будем строить модель" /></p>
 <ul>
 <li>
 <p>Раскрываем список в поле Model Object</p>
@@ -181,15 +184,15 @@
 </li>
 </ul>
 <h4><a href="#4-ура-модель-создана-и-открылась-для-редактирования-справа-от-области-model-explorer" id="4-ура-модель-создана-и-открылась-для-редактирования-справа-от-области-model-explorer">4. Ура! Модель создана и открылась для редактирования справа от области Model Explorer.</a></h4>
-<p><img src="img/11_Project_created.jpg" alt="Так выглядит созданный проект" title="Так выглядит созданный проект" /></p>
+<p><img src="img\01.PrepForWork\11_Project_created.jpg" alt="Так выглядит созданный проект" title="Так выглядит созданный проект" /></p>
 <p>Но мы хотим использовать другой, более удобный редактор, поэтому мы закроем редактор модели, и затем:</p>
 <p>4.1 Вернемся в область Model Explorer  -&gt; выделим нашу модель -&gt; ПКМ</p>
 <p>4.2 Open With -&gt; Vinci Model Sirius Editor</p>
-<p><img src="img/14_change_editor.jpg" alt="Открываем Сириус редактор модели" title="Открываем Сириус редактор модели" /></p>
+<p><img src="img\01.PrepForWork\14_change_editor.jpg" alt="Открываем Сириус редактор модели" title="Открываем Сириус редактор модели" /></p>
 <h3><a href="#5-последним-шагом-мы-выбираем-viewpoint-для-нашего-проекта" id="5-последним-шагом-мы-выбираем-viewpoint-для-нашего-проекта">5. Последним шагом мы выбираем Viewpoint для нашего проекта</a></h3>
 <p>5.1 Выделяем корневой каталог проекта -&gt; <strong>ПКМ</strong> -&gt; Viewpoints Selection</p>
 <p>5.2 Ставим галочку, выбираем Viewpoint Vinci</p>
-<p><img src="img/13_VP_Vinci.jpg" alt="выбираем вью поинт" title="Выбираем точку зрения на наш проект" /></p>
+<p><img src="img\01.PrepForWork\13_VP_Vinci.jpg" alt="выбираем вью поинт" title="Выбираем точку зрения на наш проект" /></p>
 <h3><a href="#проект-готов-к-работе" id="проект-готов-к-работе">Проект готов к работе!</a></h3>
 </div>
       </div>

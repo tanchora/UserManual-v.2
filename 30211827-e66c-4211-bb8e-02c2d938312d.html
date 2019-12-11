@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <title>Website development using Nasdanika Vinci</title>
+    <title>Nasdanika Vinci</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/themes/default/style.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/jstree.min.js"></script>
@@ -16,7 +16,7 @@
   <body>
     <div class="container-fluid mt-2">
       <div class="row">
-        <div class="col bg-dark p-2">
+        <div style="text-decoration:none" class="col bg-dark p-2">
           <a data-nsd-action="index" href="index.html" class="nsd-action p-2 text-light text-left font-weight-bold display-4">
             <span title="Точка входа в проект">Website development using Nasdanika Vinci</span>
           </a>
@@ -26,16 +26,16 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col bg-light px-0">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a data-nsd-action="246dc448-143c-4b8e-a2e1-f66bde487938" href="246dc448-143c-4b8e-a2e1-f66bde487938.html" class="nsd-action bg-light mb-1 mt-1 ml-1 mr-3 navbar-brand">
               <span title="Creating and managing site">
                 <span style="margin-right:0.3em" class="fas fa-dharmachakra"></span>Vinci development</span>
             </a>
-            <button type="button" data-toggle="collapse" data-target="#nsd-1c3" class="navbar-toggler">
+            <button type="button" data-toggle="collapse" data-target="#nsd-65" class="navbar-toggler">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd-1c3" class="collapse navbar-collapse">
+            <div id="nsd-65" class="collapse navbar-collapse">
               <ul class="navbar-nav">
                 <li class="nav-item m-1">
                   <a href="07a68e63-1768-4632-802a-0766f61f22f2.html" disabled="false" class="nav-link">
@@ -144,13 +144,53 @@
             </div>
           </div>
         </div>
-        <div class="col p-2">
+        <div style="overflow-x:scroll" class="col p-2">
           <h2 data-nsd-action="30211827-e66c-4211-bb8e-02c2d938312d" class="nsd-action">2. Установка Nasdanika Tool Suit</h2>
           <div role="tablist" class="nav nav-tabs">
-            <a href="#nsd-action-content-fa7e4807-5cf4-4e88-91dc-c2cda0a211ae" data-toggle="tab" role="tab" class="nav-item nav-link active">2.1 Установка NTS</a>
+            <a href="#nsd-action-content-fa7e4807-5cf4-4e88-91dc-c2cda0a211ae" data-toggle="tab" role="tab" class="nav-item nav-link active">2.1 Установка Nasdanika Tool Suit</a>
             <a href="#nsd-action-content-7616c8a3-aef2-418e-b7ae-73dd94caf01a" data-toggle="tab" role="tab" class="nav-item nav-link">
               <span title="2.2 Настройка рабочего пространства Workspace setup">2.2 Настройка рабочего пространства</span>
             </a>
+          </div>
+          <div class="tab-content">
+            <div id="nsd-action-content-fa7e4807-5cf4-4e88-91dc-c2cda0a211ae" role="tabpanel" class="tab-pane fade show active"><hr />
+<p>Nasdanika Tool Suit  - это набор инструментов, базирующийся на популярнейшей среде разработки Eclipse.  Процесс установки  очень прост:</p>
+<ul>
+<li>На сайте <a href="https://nasdanika.org/develop/products/tool-suite/index.html" title="Nasdanika LLC">разработчика программного обеспечения</a> скачиваем архив с установочным пакетом для Windows x64.</li>
+<li>или используем прямую ссылку для скачивания:    <a href="https://nasdanika.org/develop/products/tool-suite/nasdanika-tool-suite-2019-11-01-win32-x86_64.zip">https://nasdanika.org/develop/products/tool-suite/nasdanika-tool-suite-2019-11-01-win32-x86_64.zip</a>.</li>
+<li>распаковываем архив на свой диск.</li>
+<li>нахдим  в папке с распакованным архивом файл eclipse.exe.  Создаем для этого файла ярлык и вытаскиваем ярлык на рабочий стол, чтобы было удобнее запускать.</li>
+</ul>
+<p>Запускаем. Радуемся. <a href="7616c8a3-aef2-418e-b7ae-73dd94caf01a.html" title="Здесь написано про то как настроить рабочее пространство.">Начинаем настраивать рабочее пространство</a></p>
+<hr />
+<p>Подробное описание процесса с картинками ниже:</p>
+<ol>
+<li>Переходим по ссылке: <a href="https://nasdanika.org/develop/products/tool-suite/index.html">https://nasdanika.org/develop/products/tool-suite/index.html</a> и попадаем на сайт Nasdanika.</li>
+<li>Там все по английски, но мы находим место где написано Binaries: Windows x64 и скачиваем архив, по ссылке. <img src="img/01.PrepForWork/01.01_Nasdanika_Tool_Suit_download.jpg" alt="Ссылка на скачивание архива с программой" title="Ссылка на скачивание архива с программой" /></li>
+<li>Или используем прямую ссылку на арахив: <a href="https://nasdanika.org/develop/products/tool-suite/nasdanika-tool-suite-2019-11-01-win32-x86_64.zip">https://nasdanika.org/develop/products/tool-suite/nasdanika-tool-suite-2019-11-01-win32-x86_64.zip</a></li>
+<li>Внутри архива находится папка с названием <strong>eclipse</strong>. Мы можем перетащить ее из архива в то место файловой системы, где хотим хранить наш Eclipce Nasdanika Tool Suit. Либо щелкаем правой кнопкой мыши по архиву, выбираем в контекстном меню <strong>Извлечь всё</strong> и указываем папку в которую хотим распаковать архив. <img src="img/01.PrepForWork/01.02_ArchiveExtraction.jpg" alt="Извлечение папки из архива" title="Извлечение папки из архива" /> <img src="img/01.PrepForWork/01.03.ChooseFolder.jpg" alt="Выбираем папку для установки" title="Выбираем папку для установки" /></li>
+<li>Открываем папку <strong>eclipse</strong> и находим файл <strong>eclipse.exe</strong>. Создаем для него ярлык, и перемещаем ярлык на рабочий стол.</li>
+<li>Запускаем Eclipse. <a href="7616c8a3-aef2-418e-b7ae-73dd94caf01a.html">Переходим к настройке рабочего пространства</a>.</li>
+</ol>
+</div>
+            <div id="nsd-action-content-7616c8a3-aef2-418e-b7ae-73dd94caf01a" role="tabpanel" class="tab-pane fade">
+              <div class="markdown-body"><hr />
+<p>При певом запуске Eclipse попросит выбрать папку, в которой будет располагаться рабочее пространство (Workspace). Если вы раньше не устанавливали Eclipse и у вас нет параллельно используемых копий программы, то используйте дирректорию, которая предлагается по умолчанию. Ничего не меняйте, нажмите кнопку <strong>Launch</strong>.</p>
+<p><img src="img\01.PrepForWork\01.02.2_SelectWorkspaceFolder.jpg" alt="Выбор рабочего пространства" title="Если вы раньше не использовали Eclipse, то установите галочку в поле Use this is default and do not ask again и нажмите кнопку Launch" /></p>
+<p>Это окошко будет появляться при каждом запуске Eclipse, если вы не установите галочку в поле <strong>Use this is default and do not ask again</strong>.</p>
+<p>Затем появится окно приветствия, которое можно просто закрыть или нажать на кнопку <strong>Workbench</strong>.</p>
+<p><img src="img/01.PrepForWork/01.03.2_EclipseWelcome.jpg" alt="Открываем рабочее пространство" title="Открываем рабочее пространство" /></p>
+<p>Далее настраиваем кодировку, которая будет использоваться в данном рабочем пространстве.</p>
+<p>В главном меню выбираем <strong>Window</strong> -&gt; <strong>Preferences</strong></p>
+<p>В открывшемся диалоговом окне раскрываем группу настроек <strong>General</strong> выделяем группу настроек <strong>Workspace</strong>.</p>
+<p>Меняем настройки <strong>Text file encoding</strong>: ставим галочку в поле <strong>Other</strong> и выбираем кодировку <strong>UTF-8</strong>.</p>
+<p><img src="img/01.PrepForWork/01.03.22_PreferencesGeneral.jpg" alt="Настраиваем кодировку" title="Настраиваем кодировку" /></p>
+<p>Так как проект Nasdanika Vinci находится в стадии активного развития, нам нужно периодически  обновлять программу. Это делается следующим образом:</p>
+<p>В главном меню находим <strong>Help</strong> -&gt; <strong>Check for udates</strong>  нажимаем, и ждем пока <strong>Eclipse</strong> найдет все доступные обновления.</p>
+<p><img src="img/01.PrepForWork/01.02.23_Check_for_updates.jpg" alt="Проверка обновлений eclipse" title="Проверка обновлений eclipse" /></p>
+<p>Если обновления будут найдены, то появится диалоговое окно, в котором надо будет подтвердить, что мы хотим установить найденные обновления, принять лицензионное соглашение и согласиться с тем, что мы хотим установить выбранные компоненты несмотря на то, что они не подписаны.</p>
+</div>
+            </div>
           </div>
         </div>
       </div>

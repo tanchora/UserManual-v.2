@@ -1,13 +1,29 @@
-# This is an example of page content.
+
+## Даёшь принципы Domain Driven Development - в веб-разработку!!!
+
+-----
 
 
-* it contains a description of what we will post on the page.
+Команда __Nasdanika__ предлагает способ создания многостраничных, сложно структурированных, статических веб-сайтов, посредством построения модели сайта и генерации кода всех состовляющих сайт элементов. 
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+Этот подход не требует  знания HTML, CSS  или чего либо другого.
 
+Предполагается, что пользователь может построить диаграмму (блок-схему) взаимосвязей элементов сайта и наполнить сайт содержимым: 
+написать статьи, подготовить фотографии и т.д.
+Вся остальная работа по созданию сайта состоит в том, чтобы нажать одну кнопку в контекстном 
+меню. Сайт сгенерируется автоматически. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis nulla vitae risus venenatis dictum. Integer nec lacus tempor, euismod ligula sit amet, tempus justo. Vestibulum ante erat, egestas vitae turpis ac, ullamcorper semper ante. Ut sed iaculis dui. Mauris sed tristique nisl. Vestibulum lorem nisl, egestas eget ultrices imperdiet, ultrices et nulla. Donec nec tempus tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in tempor magna. In in sagittis nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+Скорость генерации сайта зависит от величины модели и составляет не более 60 секунд 
+(для моделей менее 100 страниц). Таким образом, пользователь может менять модель любым 
+удобным для него образом, а затем перегенерировать ее заново.  
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis nulla vitae risus venenatis dictum. Integer nec lacus tempor, euismod ligula sit amet, tempus justo. Vestibulum ante erat, egestas vitae turpis ac, ullamcorper semper ante. Ut sed iaculis dui. Mauris sed tristique nisl. Vestibulum lorem nisl, egestas eget ultrices imperdiet, ultrices et nulla. Donec nec tempus tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in tempor magna. In in sagittis nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+Настройка внешнего вида сайта может быть основана на одном из предлагаемых нами шаблонов, либо на темах оформления [Bootswatch](https://bootswatch.com/). 
+Так же доступна расширенная настройка внешнего вида, для тех, кто владеет необходимыми для этого знаниями и умениями.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis nulla vitae risus venenatis dictum. Integer nec lacus tempor, euismod ligula sit amet, tempus justo. Vestibulum ante erat, egestas vitae turpis ac, ullamcorper semper ante. Ut sed iaculis dui. Mauris sed tristique nisl. Vestibulum lorem nisl, egestas eget ultrices imperdiet, ultrices et nulla. Donec nec tempus tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in tempor magna. In in sagittis nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+Разработка остуществляется при помощи [__Nasdanika Tool Suit__](https://nasdanika.org/develop/products/tool-suite/index.html "Здесь можно скачать архив: IDE Eclipse c предустановленным набором инструменов Nasdanika")
+, набора инструментов, базирующегося на популярнейшей среде разработки Eclipse.
+
+При данном методе разработки нет необходимости устанавливать и администрировать базу 
+данных. Nasdanika Vinci хранит все данные в модели сайта. 
+
+И всё это  - абсолютно бесплатно!!! 

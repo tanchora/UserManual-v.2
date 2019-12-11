@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <title>Website development using Nasdanika Vinci</title>
+    <title>Nasdanika Vinci</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/themes/default/style.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/jstree.min.js"></script>
@@ -16,7 +16,7 @@
   <body>
     <div class="container-fluid mt-2">
       <div class="row">
-        <div class="col bg-dark p-2">
+        <div style="text-decoration:none" class="col bg-dark p-2">
           <a data-nsd-action="index" href="index.html" class="nsd-action p-2 text-light text-left font-weight-bold display-4">
             <span title="Точка входа в проект">Website development using Nasdanika Vinci</span>
           </a>
@@ -26,16 +26,16 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col bg-light px-0">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a data-nsd-action="246dc448-143c-4b8e-a2e1-f66bde487938" href="246dc448-143c-4b8e-a2e1-f66bde487938.html" class="nsd-action bg-light mb-1 mt-1 ml-1 mr-3 navbar-brand">
               <span title="Creating and managing site">
                 <span style="margin-right:0.3em" class="fas fa-dharmachakra"></span>Vinci development</span>
             </a>
-            <button type="button" data-toggle="collapse" data-target="#nsd-1cj" class="navbar-toggler">
+            <button type="button" data-toggle="collapse" data-target="#nsd-6l" class="navbar-toggler">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd-1cj" class="collapse navbar-collapse">
+            <div id="nsd-6l" class="collapse navbar-collapse">
               <ul class="navbar-nav">
                 <li class="nav-item m-1">
                   <a href="07a68e63-1768-4632-802a-0766f61f22f2.html" disabled="false" class="nav-link">
@@ -144,19 +144,22 @@
             </div>
           </div>
         </div>
-        <div class="col p-2">
+        <div style="overflow-x:scroll" class="col p-2">
           <h2 data-nsd-action="ee5b867e-c1eb-4bc2-ae75-20965158a01f" class="nsd-action">
             <span style="margin-right:0.3em" class="fab fa-java"></span>1. Установка Java</h2><?xml version="1.0" encoding="UTF-8"?>
-<org.nasdanika.vinci.bootstrap:BootstrapPage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.nasdanika.vinci.app="urn:org.nasdanika.vinci.app" xmlns:org.nasdanika.vinci.bootstrap="urn:org.nasdanika.vinci.bootstrap" xmlns:org.nasdanika.vinci.components="urn:org.nasdanika.vinci.components" title="Website development using Nasdanika Vinci" description="Методика создания многостраничного статического сайта с помощью Nasdanika Vinci" name="Website development using Nasdanika Vinci" fontAwesome="true" jsTree="true" githubMarkdownCss="true" theme="Cerulean">
-  <builders xsi:type="org.nasdanika.vinci.app:BootstrapContainerApplication" fluid="true">
+<org.nasdanika.vinci.bootstrap:BootstrapPage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.nasdanika.ncore="urn:org.nasdanika.ncore" xmlns:org.nasdanika.vinci.app="urn:org.nasdanika.vinci.app" xmlns:org.nasdanika.vinci.bootstrap="urn:org.nasdanika.vinci.bootstrap" xmlns:org.nasdanika.vinci.components="urn:org.nasdanika.vinci.components" title="Website development using Nasdanika Vinci" description="Методика создания многостраничного статического сайта с помощью Nasdanika Vinci" name="Nasdanika Vinci" fontAwesome="true" jsTree="true" githubMarkdownCss="true" theme="Cerulean">
+  <builders xsi:type="org.nasdanika.vinci.app:BootstrapContainerApplication" title="Это наш контейнер" fluid="true">
     <appearance background="" attributes="children:&#xD;&#xA;    content-row:&#xD;&#xA;         style:&#xD;&#xA;           min-height: 30rem">
       <margin size="2" bottom="false" left="false" right="false"/>
     </appearance>
     <header>
-      <appearance background="Dark">
+      <appearance background="Dark" attributes="style:&#xD;&#xA;    text:&#xD;&#xA;        decoration: none">
         <padding size="2" top="false" bottom="false" left="false" right="false" x="true" y="true"/>
       </appearance>
     </header>
+    <navigationBar>
+      <appearance background="Light" attributes="class:&#xD;&#xA;    px: 0"/>
+    </navigationBar>
     <navigationPanel>
       <appearance attributes="style:&#xD;&#xA;&#xD;&#xA;    overflow:&#xD;&#xA;&#xD;&#xA;        x: scroll">
         <border color="Light" top="false" bottom="false" left="false"/>
@@ -165,7 +168,7 @@
       <width width="auto"/>
     </navigationPanel>
     <contentPanel>
-      <appearance>
+      <appearance attributes="style:&#xD;&#xA;&#xD;&#xA;    overflow:&#xD;&#xA;&#xD;&#xA;        x: scroll">
         <padding size="2"/>
       </appearance>
       <width/>
@@ -180,7 +183,7 @@
         <padding size="2" top="false" bottom="false" left="false" right="false" x="true" y="true"/>
         <text alignment="Left" color="Light" transform="" weight="Bold"/>
       </appearance>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="Создание и управление сайтом" description="Краткое описание инструмента и этапов работы &#xD;&#xA;Nasdanika Vinci как инструмент создания и управления сайтом&#xD;&#xA;" color="Danger" id="246dc448-143c-4b8e-a2e1-f66bde487938" text="Vinci development" icon="fas fa-dharmachakra" tooltip="Creating and managing site" linkedElements="//@builders.0/@builders.0/@elements.8 //@builders.0/@builders.0/@elements.5 //@builders.0/@builders.0/@elements.3 //@builders.0/@builders.0/@elements.4 //@builders.0/@builders.0/@elements.7 //@builders.0/@builders.0/@elements.6 //@builders.0/@builders.0/@elements.14 //@builders.0/@builders.0/@elements.28 //@builders.0/@builders.0/@elements.29 //@builders.0/@builders.0/@elements.30 //@builders.0/@builders.0/@elements.31">
+      <elements xsi:type="org.nasdanika.vinci.app:Action" title="Создание и управление сайтом" description="Краткое описание инструмента и этапов работы &#xD;&#xA;Nasdanika Vinci как инструмент создания и управления сайтом&#xD;&#xA;" color="Danger" id="246dc448-143c-4b8e-a2e1-f66bde487938" text="Vinci development" icon="fas fa-dharmachakra" tooltip="Creating and managing site" linkedElements="//@builders.0/@builders.0/@elements.8 //@builders.0/@builders.0/@elements.5 //@builders.0/@builders.0/@elements.3 //@builders.0/@builders.0/@elements.4 //@builders.0/@builders.0/@elements.7 //@builders.0/@builders.0/@elements.6 //@builders.0/@builders.0/@elements.14 //@builders.0/@builders.0/@elements.22 //@builders.0/@builders.0/@elements.23 //@builders.0/@builders.0/@elements.24 //@builders.0/@builders.0/@elements.25">
         <appearance background="Light">
           <margin size="1" right="false"/>
           <margin size="3" top="false" bottom="false" left="false"/>
@@ -233,44 +236,74 @@
           <margin size="1"/>
         </appearance>
       </elements>
-      <elements xsi:type="org.nasdanika.vinci.app:ActionCategory" title="Подготовка к работе" id="fc825fae-4f8a-4102-bce9-b5179091994e" text="Подготовка к работе" icon="fas fa-tools" linkedElements="//@builders.0/@builders.0/@elements.9 //@builders.0/@builders.0/@elements.10 //@builders.0/@builders.0/@elements.12"/>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="1. Установка Java" id="ee5b867e-c1eb-4bc2-ae75-20965158a01f" text="1. Установка Java" icon="fab fa-java">
+      <elements xsi:type="org.nasdanika.vinci.app:ActionCategory" title="01.Подготовка к работе" id="fc825fae-4f8a-4102-bce9-b5179091994e" text="Подготовка к работе" icon="fas fa-tools" linkedElements="//@builders.0/@builders.0/@elements.9 //@builders.0/@builders.0/@elements.10 //@builders.0/@builders.0/@elements.12"/>
+      <elements xsi:type="org.nasdanika.vinci.app:Action" title="01.01. Установка Java" id="ee5b867e-c1eb-4bc2-ae75-20965158a01f" text="1. Установка Java" icon="fab fa-java">
         <content xsi:type="org.nasdanika.vinci.components:MarkdownResource" location=""/>
+        <content xsi:type="org.nasdanika.vinci.components:MarkdownText" title="Как усановить джаву" markdown="Рекомендуемая версия Java - 8. &#xD;&#xA;&#xD;&#xA;Скачать можно тут: &lt;https://www.java.com/ru/download/manual.jsp>&#xD;&#xA;&#xD;&#xA;Про то как установить можно прочитать тут: &lt;https://www.java.com/ru/download/help/windows_manual_download.xml#download>&#xD;&#xA;&#xD;&#xA;Посмотреть как это деалается можно тут: &lt;https://www.youtube.com/watch?v=uXMTq81jG7Y>"/>
       </elements>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="2. Установка Nasdanika Tool Suit" id="30211827-e66c-4211-bb8e-02c2d938312d" text="2. Установка Nasdanika Tool Suit" linkedElements="//@builders.0/@builders.0/@elements.13 //@builders.0/@builders.0/@elements.11"/>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="2.2 Настройка рабочего пространства" description="2.2 Настройка рабочего пространства&#xD;&#xA;Workspace setup" id="7616c8a3-aef2-418e-b7ae-73dd94caf01a" text="2.2 Настройка рабочего пространства" role="Section"/>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="3. Создание проекта" id="07efe272-fc62-4c68-9b90-ee23db3c6a1a" text="3. Создание проекта">
-        <content xsi:type="org.nasdanika.vinci.components:MarkdownResource" location="User-Manual-2\Articles\ProjectCreation.md"/>
+      <elements xsi:type="org.nasdanika.vinci.app:Action" title="01.02. Установка Nasdanika Tool Suit" id="30211827-e66c-4211-bb8e-02c2d938312d" text="2. Установка Nasdanika Tool Suit" linkedElements="//@builders.0/@builders.0/@elements.13 //@builders.0/@builders.0/@elements.11"/>
+      <elements xsi:type="org.nasdanika.vinci.app:Action" title="01.02.2 Настройка рабочего пространства" description="2.2 Настройка рабочего пространства&#xD;&#xA;Workspace setup" id="7616c8a3-aef2-418e-b7ae-73dd94caf01a" text="2.2 Настройка рабочего пространства" role="Section">
+        <content xsi:type="org.nasdanika.vinci.components:MarkdownResource" style="true" location="User-Manual-2/Articles/01.PrepForWork/01.02.2_WorkspaceCustomization.md"/>
       </elements>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="2.1 Установка NTS" id="fa7e4807-5cf4-4e88-91dc-c2cda0a211ae" text="2.1 Установка NTS" role="Section"/>
-      <elements xsi:type="org.nasdanika.vinci.app:ActionCategory" title="Создаем модель" id="5a7b58fa-c0fe-4c23-a5c5-7c47aef2880a" text="Создаем модель" icon="fas fa-sitemap" tooltip="Create a model" linkedElements="//@builders.0/@builders.0/@elements.18 //@builders.0/@builders.0/@elements.19 //@builders.0/@builders.0/@elements.25"/>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="2. Настройки корневого элемента модели: Page" id="e8322ef3-f089-4379-80ca-9a518dd7b0c9" text="2. Настройки корневого элемента модели: Page" role="Section"/>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="1. Структура проекта. Интерфейс Eclipse" id="a2f9e2a9-dc92-45c9-b686-f27f82e34d74" text="1. Структура проекта. Интерфейс Eclipse" role="Section"/>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="3. Создание и настройка Bootstrap Contaner Application" id="3012f69a-6499-4a10-8386-239c08bfd59e" text="3. Создание и настройка Bootstrap Contaner Application" role="Section"/>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="1. Базовые элементы модели" description="" id="7b60e26f-0132-420c-95b2-e17326d5180a" text="1. Базовые элементы модели" linkedElements="//@builders.0/@builders.0/@elements.16 //@builders.0/@builders.0/@elements.15 //@builders.0/@builders.0/@elements.17 //@builders.0/@builders.0/@elements.26 //@builders.0/@builders.0/@elements.27"/>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="2. Диаграмма элементов модели" id="edc29292-4931-4352-91a9-8e6c4bce3c67" text="2. Диаграмма элементов модели" linkedElements="//@builders.0/@builders.0/@elements.20 //@builders.0/@builders.0/@elements.21 //@builders.0/@builders.0/@elements.22 //@builders.0/@builders.0/@elements.23 //@builders.0/@builders.0/@elements.24"/>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="1. Создание и настройка корневой Action" id="c08a49f0-3578-4e65-8616-72a57a75d7f9" text="1. Создание и настройка корневой Action" role="Section"/>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="2. Создание простой диаграммы" id="5d7680c3-f2fd-4dfb-89cb-b5d0b7d14535" text="2. Создание простой диаграммы" role="Section"/>
+      <elements xsi:type="org.nasdanika.vinci.app:Action" title="01.03. Cоздание Vinci проекта" id="07efe272-fc62-4c68-9b90-ee23db3c6a1a" text="3. Создание проекта">
+        <content xsi:type="org.nasdanika.vinci.components:MarkdownResource" title="01.03. Cоздание Vinci проекта" location="User-Manual-2/Articles/01.PrepForWork/ProjectCreation.md"/>
+      </elements>
+      <elements xsi:type="org.nasdanika.vinci.app:Action" title="01.02.1 Установка NTS" id="fa7e4807-5cf4-4e88-91dc-c2cda0a211ae" text="2.1 Установка Nasdanika Tool Suit" role="Section">
+        <content xsi:type="org.nasdanika.vinci.components:MarkdownResource" title="Подробное описание установки NTS" location="User-Manual-2/Articles/01.PrepForWork/NTS-inctallation.md"/>
+      </elements>
+      <elements xsi:type="org.nasdanika.vinci.app:ActionCategory" title="02. Создаем модель" id="5a7b58fa-c0fe-4c23-a5c5-7c47aef2880a" text="Создаем модель" icon="fas fa-sitemap" tooltip="Create a model" linkedElements="//@builders.0/@builders.0/@elements.14/@elements.0 //@builders.0/@builders.0/@elements.15 //@builders.0/@builders.0/@elements.21">
+        <elements xsi:type="org.nasdanika.vinci.app:Action" title="02.01. Базовые элементы модели" description="" id="7b60e26f-0132-420c-95b2-e17326d5180a" text="1. Базовые элементы модели" linkedElements="//@builders.0/@builders.0/@elements.14/@elements.1 //@builders.0/@builders.0/@elements.14/@elements.2 //@builders.0/@builders.0/@elements.14/@elements.3 //@builders.0/@builders.0/@elements.14/@elements.4 //@builders.0/@builders.0/@elements.14/@elements.5 //@builders.0/@builders.0/@elements.14/@elements.6">
+          <content xsi:type="org.nasdanika.vinci.components:MarkdownText" markdown="&#xD;&#xA;----&#xD;&#xA;&#xD;&#xA;Корневой элемент __Page__ - содается автоматически, присутствует в новом проекте. Необходима настройка. (см. [раздел 1.3] (e8322ef3-f089-4379-80ca-9a518dd7b0c9.html &quot;Настройка элемента Page&quot;) )&#xD;&#xA; &#xD;&#xA;__Bootstrap Container Application__- выделяем  Page -> [ПКМ](3012f69a-6499-4a10-8386-239c08bfd59e.html &quot;Щелчёк правой кнопкой мыши&quot;) -> New child -> Bootstrap Container Application.&#xD;&#xA;&#xD;&#xA;После создания  __Bootstrap Container Application__ можно приступать к [построению модели нашего сайта](edc29292-4931-4352-91a9-8e6c4bce3c67.html &quot;Создаём даиграмму Actions&quot;)&#xD;&#xA;"/>
+        </elements>
+        <elements xsi:type="org.nasdanika.vinci.app:Action" title="02.01.1 Интерфейс Eclipse" id="a2f9e2a9-dc92-45c9-b686-f27f82e34d74" text="1.1 Интерфейс Eclipse" role="Section">
+          <content xsi:type="org.nasdanika.vinci.components:MarkdownResource" title="02.01.1 Интерфейс Эклипс" location="User-Manual-2/Articles/02.ModelCreation/BasicModelElements.md"/>
+        </elements>
+        <elements xsi:type="org.nasdanika.vinci.app:Action" title="02.01.2 Структура проекта" id="6bd12753-20ef-4ff9-911e-66927ef1a9b0" text="1.2 Структура проекта" role="Section">
+          <content xsi:type="org.nasdanika.vinci.components:MarkdownResource" location="User-Manual-2/Articles/02.ModelCreation/Navpan_2.1.2_ProjectStructure.md"/>
+        </elements>
+        <elements xsi:type="org.nasdanika.vinci.app:Action" title="02.01.3 Настройки корневого элемента модели: Page" id="e8322ef3-f089-4379-80ca-9a518dd7b0c9" text="1.3 Корневой элемент модели: Page" role="Section">
+          <content xsi:type="org.nasdanika.vinci.components:MarkdownResource" title="Настройки корневого элемента Page" style="true" location="User-Manual-2/Articles/02.ModelCreation/NavPan_2.1.3_Page propertis.md"/>
+        </elements>
+        <elements xsi:type="org.nasdanika.vinci.app:Action" title="02.01.4 Создание и настройка Bootstrap Contaner Application" description="&#x9;&#x9;" id="3012f69a-6499-4a10-8386-239c08bfd59e" text="1.4  Bootstrap Contaner Application" role="Section">
+          <content xsi:type="org.nasdanika.vinci.components:MarkdownResource" title="02.01.4 Бутрстрэп контейнер аппликэйшн" style="true" location="User-Manual-2/Articles/02.ModelCreation/NavPan_2.1.4_BCA"/>
+        </elements>
+        <elements xsi:type="org.nasdanika.vinci.app:Action" title="Что такое Vinci Action?" id="a1dd0b53-f312-4e83-b9ea-7a840980d6e8" text="Что такое Action?" role="Context">
+          <elements xsi:type="org.nasdanika.vinci.app:ActionReference" action="//@builders.0/@builders.0/@elements.14/@elements.6"/>
+          <content xsi:type="org.nasdanika.ncore:Value" title="Что такое Action" description="Объяснить людям, что такое Action" value="В Nasdanika Vinci под Actions понимается веб-страница или любой элемент веб-страницы, который что то делает и играет какую-то роль. Заголовок, ссылка в верхней и боковой панели навигации - все это Actions. &#xD;&#xA;&#xD;&#xA;Экшнс могут быть сгруппированы, вложены друг в друга, как матрешка. Они могут играть на разных страницах разную роль. &#xD;&#xA;Например, в боковом меню вы сейчас видите Actions, которым назначена навигационная роль, если мы переходим в эту Action, то видим ее содержимое в основной части окна браузера. &#xD;&#xA;&#xD;&#xA;Каждая экшн имеет оформление  (Appearense)  и содержание (Content)."/>
+        </elements>
+        <elements xsi:type="org.nasdanika.vinci.app:Action" title="Как настроить Vinci Action?" id="4e176e88-7160-4741-aa3f-bb7e31308eaa" text="Как настроить Vinci Action?" role="Context">
+          <content xsi:type="org.nasdanika.ncore:Value" title="Настраиваем Action" value=" Настроить можно:&#xD;&#xA;Роль&#xD;&#xA;Внешний вид&#xD;&#xA;Содержание"/>
+        </elements>
+      </elements>
+      <elements xsi:type="org.nasdanika.vinci.app:Action" title="02.02 Диаграмма элементов модели" id="edc29292-4931-4352-91a9-8e6c4bce3c67" text="2. Диаграмма элементов модели" linkedElements="//@builders.0/@builders.0/@elements.16 //@builders.0/@builders.0/@elements.17 //@builders.0/@builders.0/@elements.18 //@builders.0/@builders.0/@elements.19 //@builders.0/@builders.0/@elements.20"/>
+      <elements xsi:type="org.nasdanika.vinci.app:Action" title="02.02.1. Создание и настройка корневой Action" id="c08a49f0-3578-4e65-8616-72a57a75d7f9" text="1. Создание и настройка корневой Action" role="Section">
+        <content xsi:type="org.nasdanika.vinci.components:MarkdownResource" title="Создаем  и настраиваем корневую Action " style="true" location="User-Manual-2/Articles/02.ModelCreation/02.02.1_Creaton_customization_root_action.md"/>
+      </elements>
+      <elements xsi:type="org.nasdanika.vinci.app:Action" title="2. Создание простой диаграммы" id="5d7680c3-f2fd-4dfb-89cb-b5d0b7d14535" text="2. Создание простой диаграммы" role="Section">
+        <content xsi:type="org.nasdanika.vinci.components:MarkdownResource" style="true" location="User-Manual-2/Articles/02.ModelCreation/02.02.2_DiagramCreation.md"/>
+      </elements>
       <elements xsi:type="org.nasdanika.vinci.app:Action" title="3. Элементы диаграммы и элементы модели" id="99d7f6d3-34fb-41bb-9877-c14368d25674" text="Элементы диаграммы и элементы модели" role="Context"/>
       <elements xsi:type="org.nasdanika.vinci.app:Action" title="4. Элементы диаграммы и элементы макета сайта" id="63f5c010-f764-473e-8832-321523607b26" text="Элементы диаграммы и элементы макета сайта" role="Context"/>
       <elements xsi:type="org.nasdanika.vinci.app:Action" title="5. Создание иерархических диаграмм" id="568f7dc8-8471-45d1-ac43-0bc498e61278" text="3. Создание иерархических диаграмм" role="Section"/>
       <elements xsi:type="org.nasdanika.vinci.app:Action" title="3. Генерируем сайт" id="a51e0869-1a9a-4e8b-90fb-91d0d2601503" text="3. Генерируем сайт"/>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="Что такое Vinci Action?" id="a1dd0b53-f312-4e83-b9ea-7a840980d6e8" text="Что такое Action?" role="Context"/>
-      <elements xsi:type="org.nasdanika.vinci.app:Action" title="Как настроить Vinci Action?" id="4e176e88-7160-4741-aa3f-bb7e31308eaa" text="Как настроить Vinci Action?" role="Context"/>
-      <elements xsi:type="org.nasdanika.vinci.app:ActionCategory" title="Настраиваем роли элементов модели" description="Customize the roles of model elements" id="b518f9f5-5cc0-4296-9b92-c1e066eaf0c0" text="Настраиваем роли элементов модели" icon="fas fa-theater-masks" linkedElements="//@builders.0/@builders.0/@elements.32"/>
-      <elements xsi:type="org.nasdanika.vinci.app:ActionCategory" title="Customize design" id="c25d37ce-18b1-403a-a8b4-0fc59f0c41fa" text="Настраиваем внешний вид" icon="fas fa-paint-brush" linkedElements="//@builders.0/@builders.0/@elements.33"/>
-      <elements xsi:type="org.nasdanika.vinci.app:ActionCategory" title="Add content" color="" id="6039d312-800b-4bc8-b36a-690357589ca2" text="Наполняем сайт" icon="fas fa-pencil-ruler" linkedElements="//@builders.0/@builders.0/@elements.34 //@builders.0/@builders.0/@elements.35"/>
-      <elements xsi:type="org.nasdanika.vinci.app:ActionCategory" title="Публикация" id="eb1d6c67-46f3-4f94-841d-c0c13e615ff7" text="Публикация" icon="fas fa-share-square" linkedElements="//@builders.0/@builders.0/@elements.36 //@builders.0/@builders.0/@elements.37"/>
+      <elements xsi:type="org.nasdanika.vinci.app:ActionCategory" title="03. Настраиваем роли элементов модели" description="Customize the roles of model elements" id="b518f9f5-5cc0-4296-9b92-c1e066eaf0c0" text="Настраиваем роли элементов модели" icon="fas fa-theater-masks" linkedElements="//@builders.0/@builders.0/@elements.26"/>
+      <elements xsi:type="org.nasdanika.vinci.app:ActionCategory" title="04. Customize design" id="c25d37ce-18b1-403a-a8b4-0fc59f0c41fa" text="Настраиваем внешний вид" icon="fas fa-paint-brush" linkedElements="//@builders.0/@builders.0/@elements.27"/>
+      <elements xsi:type="org.nasdanika.vinci.app:ActionCategory" title="05. Add content" color="" id="6039d312-800b-4bc8-b36a-690357589ca2" text="Наполняем сайт" icon="fas fa-pencil-ruler" linkedElements="//@builders.0/@builders.0/@elements.28 //@builders.0/@builders.0/@elements.29"/>
+      <elements xsi:type="org.nasdanika.vinci.app:ActionCategory" title="06. Публикация" id="eb1d6c67-46f3-4f94-841d-c0c13e615ff7" text="Публикация" icon="fas fa-share-square" linkedElements="//@builders.0/@builders.0/@elements.30 //@builders.0/@builders.0/@elements.31"/>
       <elements xsi:type="org.nasdanika.vinci.app:Action" title="Роли" id="668af40d-857a-443b-98c5-c05c5c1e77e9" text="Роли"/>
       <elements xsi:type="org.nasdanika.vinci.app:Action" title="Appearance" id="bb9b08fe-69bc-4c72-9f86-aa380c81eb00" text="Appearance"/>
       <elements xsi:type="org.nasdanika.vinci.app:Action" title="HTML" id="6928f61a-c5a4-442d-860a-0b7d9f190448" text="HTML"/>
       <elements xsi:type="org.nasdanika.vinci.app:Action" title="Markdown" id="346ab0f2-90f3-44a0-9835-263a68c108f3" text="Markdown"/>
       <elements xsi:type="org.nasdanika.vinci.app:Action" title="На Гит Хабе" id="ac9ab3b2-53e0-47f3-b74b-be63029fbafb" text="На Гит Хабе"/>
       <elements xsi:type="org.nasdanika.vinci.app:Action" title="Где-то ещё" id="9878dbbd-3ada-488a-8824-5bbf00eb3d50" text="Где-то ещё"/>
-      <content xsi:type="org.nasdanika.vinci.components:MarkdownText" markdown="A brief description of the results that can be obtained when creating a site using Nasdanika Vinci and the stages of work"/>
+      <content xsi:type="org.nasdanika.vinci.components:MarkdownText" markdown="&#xD;&#xA;## Даёшь принципы Domain Driven Development - в веб-разработку!!!&#xD;&#xA;&#xD;&#xA;-----&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Команда __Nasdanika__ предлагает способ создания многостраничных, сложно структурированных, статических веб-сайтов, посредством построения модели сайта и генерации кода всех состовляющих сайт элементов. &#xD;&#xA;&#xD;&#xA;Этот подход не требует  знания HTML, CSS  или чего либо другого.&#xD;&#xA;&#xD;&#xA;Предполагается, что пользователь может построить диаграмму (блок-схему) взаимосвязей элементов сайта и наполнить сайт содержимым: &#xD;&#xA;написать статьи, подготовить фотографии и т.д.&#xD;&#xA;Вся остальная работа по созданию сайта состоит в том, чтобы нажать одну кнопку в контекстном &#xD;&#xA;меню. Сайт сгенерируется автоматически. &#xD;&#xA;&#xD;&#xA;Скорость генерации сайта зависит от величины модели и составляет не более 60 секунд &#xD;&#xA;(для моделей менее 100 страниц). Таким образом, пользователь может менять модель любым &#xD;&#xA;удобным для него образом, а затем перегенерировать ее заново.  &#xD;&#xA;&#xD;&#xA;Настройка внешнего вида сайта может быть основана на одном из предлагаемых нами шаблонов, либо на темах оформления [Bootswatch](https://bootswatch.com/). &#xD;&#xA;Так же доступна расширенная настройка внешнего вида, для тех, кто владеет необхродимыми для этого знаниями и умениями.&#xD;&#xA;&#xD;&#xA;Разработка остуществляется при помощи [__Nasdanika Tool Suit__](https://nasdanika.org/develop/products/tool-suite/index.html &quot;Здесь можно скачать архив: IDE Eclipse c предустановленным набором инструменов Nasdanika&quot;)&#xD;&#xA;, набора инструментов, базирующегося на популярнейшей среде разработки Eclipse.&#xD;&#xA;&#xD;&#xA;При данном методе разработки нет необходимости устанавливать и администрировать базу &#xD;&#xA;данных. Nasdanika Vinci хранит все данные в модели сайта. &#xD;&#xA;&#xD;&#xA;И всё это  - абсолютно бесплатно!!! "/>
     </builders>
   </builders>
 </org.nasdanika.vinci.bootstrap:BootstrapPage>
+<p>Рекомендуемая версия Java - 8.</p>
+<p>Скачать можно тут: <a href="https://www.java.com/ru/download/manual.jsp">https://www.java.com/ru/download/manual.jsp</a></p>
+<p>Про то как установить можно прочитать тут: <a href="https://www.java.com/ru/download/help/windows_manual_download.xml#download">https://www.java.com/ru/download/help/windows_manual_download.xml#download</a></p>
+<p>Посмотреть как это деалается можно тут: <a href="https://www.youtube.com/watch?v=uXMTq81jG7Y">https://www.youtube.com/watch?v=uXMTq81jG7Y</a></p>
 </div>
       </div>
       <div class="row">
