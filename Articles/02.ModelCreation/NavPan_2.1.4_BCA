@@ -1,9 +1,9 @@
 
 ----
 
-Добавляем BootstrapContainerApplication на элементе Page или на элементе Builders.
+Добавляем __Bootstrap Container Application__ на элементе Page или на элементе Builders.
 
-**_New Child -> Bootstrap Container Application_** 
+__New Child -> Bootstrap Container Application__ 
 
 ![Создаем Bootstrap Container Application из элемента Page](img/02.ModelCreation/16.07_CreationBootstrapContainerApplication.jpg "Создаем Bootstrap Container Application из элемента Page") **или** ![Создаем Bootstrap Container Application из элемента Builders](img/02.ModelCreation/16.07.01_CreationBootstrapContainerApplication.jpg "Создаем Bootstrap Container Application из элемента Builders")
 
